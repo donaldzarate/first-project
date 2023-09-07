@@ -4,7 +4,6 @@ git_vaccinate()
 
 data("iris")
 
-plot(iris$Sepal.Length, iris$Sepal.Width)
+plot(iris$Sepal.Length, iris$Sepal.width)
 
-fit1 <- lm(iris$Sepal.Length ~ iris$Sepal.Width)
-summary(fit1)
+t.test(iris$Sepal.Length, iris$Sepal.width)
